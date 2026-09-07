@@ -1,1 +1,192 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <a href="#home"> Mahatma Creates </a>
+      </div>
+      <nav class="nav" id="main-nav" aria-label="Primary">
+          <ul class="sidebar">
+              <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../ABOUTME/about.html" class="active">About</a></li>
+              <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+              <li><a href="../POETRY/poetry.html">Poems</a></li>
+              <li><a href="../Contact/contact.html" >Contact</a></li>
+            </ul>
+        <ul class="openbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ABOUTME/about.html"class="active">About</a></li>
+          <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../POETRY/poetry.html">Poems</a></li>
+          <li><a href="../Contact/contact.html" >Contact</a></li>
+        </ul>
+      </nav>
+      <button class="connect-btn" type="button" id="connect-btn">
+        Let's Connect
+      </button>
+      <li onclick=showSidebar() class="menu-button"><a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about-copy">
+          <h1>About Me</h1>
+          <div class="flourish" aria-hidden="true">
+            <svg viewBox="0 0 120 18" width="86" height="16">
+              <path
+                d="M8 10 C22 10, 28 4, 40 8 C52 12, 56 6, 60 9 C64 6, 68 12, 80 8 C92 4, 98 10, 112 10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+              <ellipse
+                cx="60"
+                cy="8.5"
+                rx="5.5"
+                ry="3.2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+              <path
+                d="M54 8.5 C50 3, 46 5, 44 8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+              <path
+                d="M66 8.5 C70 3, 74 5, 76 8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+          <p class="lead">I'm Rahma.</p>
+          <p>
+            I've always been drawn to words.Before 
+            discovering code, I spent years writing poetry, 
+            collecting thoughts, and making sense of the 
+            world through language. 
+             Then I discovered front-end development and
+             found another way to create. Now I'm exploring 
+             the space where writing, creativity, design, and 
+              meet, turning ideas into experiences 
+              that communicate and connect.
+          </p>
+          <p> I'm still learning, still building, and still becoming.</p>
+          <p><b>Mahatma Creates </b>is a reflection of that journey.</p>
+          <p class="signature">Rahma</p>
+        </div>
+        <figure class="about-photo">
+          <!-- Replace src with your photo from the mockup -->
+          <img src="Rahma.jpg" alt="Rahma working at a desk on a laptop" />
+        </figure>
+      </section>
+      <section class="traits" aria-label="What I do">
+        <article class="trait">
+          <div class="trait-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 19.5l1.2-4.2 10.6-10.6a2.1 2.1 0 0 1 3 3L8.2 18.3 4 19.5z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.2 5.2l3.6 3.6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+              />
+            </svg>
+          </div>
+          <h2>Writer</h2>
+          <p>Crafting stories<br />that stay.</p>
+        </article>
+        <article class="trait">
+          <div class="trait-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 19c2.2-1.4 4.2-4.2 5.4-7.2.4-1 .6-1.9.8-2.7 1.6.2 3.1-.8 3.5-2.3.3-1.2-.2-2.4-1.2-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.2 4.2c1.3.5 2.3 1.6 2.6 3 .5 2.2-.6 4.4-2.6 5.3"
+                fill="none"
+                stroke="currentColor"
+                strokewidth="1.3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12.6 10.2c-1.1 2.8-2.9 5.4-5.2 7.2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h2>Poet</h2>
+          <p>Finding beauty in<br />everyday moments.</p>
+        </article>
+        <article class="trait">
+          <div class="trait-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 4.5l2.1 4.1 4.6.7-3.3 3.3.8 4.6L12 15.2 7.8 17.2l.8-4.6-3.3-3.3 4.6-.7L12 4.5z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2>Developer</h2>
+          <p>Building clean &amp;<br />meaningful interfaces.</p>
+        </article>
+        <article class="trait">
+          <div class="trait-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 3.8l7.2 4.2v8L12 20.2 4.8 16V8L12 3.8z"
+                fill="none"
+                stroke="currentColor"
+                strokewidth="1.3"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.4 12.2c0-1.5 1.1-2.5 2.6-2.5 1.1 0 2 .6 2.3 1.5"
+                fill="none"
+                stroke="currentColor"
+                strokewidth="1.3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M9.6 14.6c.5.7 1.4 1.2 2.4 1.2 1.6 0 2.6-1 2.6-2.3"
+                fill="none"
+                stroke="currentColor"
+                strokewidth="1.3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h2>Lifelong Learner</h2>
+          <p>Always growing, always<br />curious.</p>
+        </article>
+      </section>
+    </main>
+    <script src="about.js"></script>
+  </body>
+</html>
