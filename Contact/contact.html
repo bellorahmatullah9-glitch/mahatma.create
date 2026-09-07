@@ -1,1 +1,130 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+          <a href="#home"> Mahatma Creates </a>
+        </div>
+        <nav class="nav" id="main-nav" aria-label="Primary">
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="../ABOUTME/about.html">About</a></li>
+                <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="../POETRY/poetry.html">Poems</a></li>
+                <li><a href="../Contact/contact.html" class="active">Contact</a></li>
+              </ul>
+          <ul class="openbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../ABOUTME/about.html">About</a></li>
+            <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="../POETRY/poetry.html">Poems</a></li>
+            <li><a href="../Contact/contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="connect-btn" type="button" id="connect-btn">
+          Let's Connect
+        </button>
+        <li onclick=showSidebar() class="menu-button"><a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+      </header>
+        <main>
+        <section>
+        <h1>Let's Connect</h1>
+        <div class="title-line"></div>
+        <div class="info-list">
+        <div class="info-item">
+        <div class="icon-circle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <path d="M3 7l9 6 9-6"/>
+        </svg>
+        </div>
+        <div>
+        <h3>Email</h3>
+        <a href="mailto:bellorahmatullah9@gmail.com">bellorahmatullah9@gmail.com</a>
+        </div>
+        </div>
+        <div class="info-item">
+        <div class="icon-circle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="3" width="18" height="18" rx="3"/>
+        <path d="M8 10v7M8 7h.01M12 17v-4.2c0-1.6 2-1.6 2 0V17M16 17v-4.8c0-2.6-3-2.4-4-.9"/>
+        </svg>
+        </div>
+        <div>
+        <h3>LinkedIn</h3>
+        <a href="
+        https://www.linkedin.com/in/rahmatullah-bello-3b8a83381?utm_source=share_via&utm_content=profile&utm_medium=member_android " target="_blank"
+        rel="noopener">linkedin.com/in/rahmatullah-bello</a>
+        </div>
+        </div>
+        <div class="info-item">
+        <div class="icon-circle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-1-2.6c3.2-.4 6.5-1.6 6.5-7A5.4 5.4 0 0 0 19 4.8 5 5 0
+        0 0 18.9 1S17.7.6 15 2.5a12.3 12.3 0 0 0-6 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8 5.4 5.4 0 0 0 3.5 8.7c0 5.4 3.3 6.6 6.5
+        7a3.4 3.4 0 0 0-1 2.6V22"/>
+        </svg>
+        </div>
+        <div>
+        <h3>GitHub</h3>
+        <a href="https://github.com/bellorahmatullah9-glitch" target="_blank"
+        rel="noopener">github.com/bellorahmatullah9-glitch</a>
+        </div>
+        </div>
+        <div class="info-item">
+        <div class="icon-circle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/>
+        <circle cx="12" cy="10" r="2.4"/>
+        </svg>
+        </div>
+        <div>
+        <h3>Location</h3>
+        <p>Nigeria</p>
+        </div>
+        </div>
+        </div>
+        </section>
+        <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button class="send-btn" type="submit">
+        Send Message
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 2L11 13"/>
+        <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+        </button>
+        </form>
+        </main>
+        <svg class="plant" viewBox="0 0 280 320" fill="none" aria-hidden="true">
+        <path d="M260 320c-20-70-10-140 8-190" stroke="#d7c4ad" stroke-width="2"/>
+        <path d="M255 250c-30-10-70 10-90 40" stroke="#d7c4ad" stroke-width="1.6"/>
+        <path d="M258 210c-40-30-20-80 10-110" stroke="#d7c4ad" stroke-width="1.6"/>
+        <path d="M250 160c-55-5-80-50-70-95" stroke="#d7c4ad" stroke-width="1.6"/>
+        <ellipse cx="230" cy="120" rx="22" ry="38" transform="rotate(-30 230 120)" stroke="#d7c4ad" strokewidth="1.4"/>
+        <ellipse cx="200" cy="90" rx="18" ry="32" transform="rotate(-50 200 90)" stroke="#d7c4ad" strokewidth="1.4"/>
+        <ellipse cx="175" cy="210" rx="24" ry="40" transform="rotate(20 175 210)" stroke="#d7c4ad" strokewidth="1.4"/>
+        <ellipse cx="210" cy="175" rx="16" ry="28" transform="rotate(-10 210 175)" stroke="#d7c4ad" strokewidth="1.4"/>
+        <ellipse cx="248" cy="80" rx="14" ry="26" transform="rotate(15 248 80)" stroke="#d7c4ad" strokewidth="1.4"/>
+        </svg>
+        <div class="modal-overlay" id="overlay">
+        <div class="modal">
+        <h2>Message Ready</h2>
+        <p id="modalText">Thanks for reaching out. Your message has been prepared.</p>
+        <button id="closeBtn" type="button">Close</button>
+        </div>
+        </div>
+        <script src="contact.js"></script>
+</body>
+</html>
