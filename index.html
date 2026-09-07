@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?
+family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="HOME/home.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="home.html">Mahatma Creates</a>
+      </div>
+      <nav class="nav-links">
+        <ul class="sidebar">
+          <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="../ABOUTME/about.html">About</a></li>
+          <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../POETRY/poetry.html">Poems</a></li>
+          <li><a href="../Contact/contact.html" >Contact</a></li>
+        </ul>
+        <ul class="openbar">
+          <li><a href="home.html" class="active hideOnMobile">Home</a></li>
+          <li><a href="../ABOUTME/about.html" class="hideOnMobile">About</a></li>
+          <li><a href="../Portfolio/portfolio.html" class="hideOnMobile">Portfolio</a></li>
+          <li><a href="../POETRY/poetry.html" class="hideOnMobile">Poems</a></li>
+          <li><a href="../Contact/contact.html" class="hideOnMobile">Contact</a></li>
+          
+        </ul>
+      </nav>
+      <button class="connect-btn" type="button" id="connect-btn">
+        Let's Connect
+      </button>
+      <li onclick=showSidebar() class="menu-button"><a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Words shape ideas.<br /> Code brings them to life..
+        </h1>
+        <p class="hero-subtitle">
+          I'm Rahma, a writer, poet and front-end
+          developer blending creativity and technology 
+          to turn ideas in my head into a meaningful
+          experience.
+        </p>
+        <div class="hero-actions">
+          <a href="../Portfolio/portfolio.html" class="btn-view-projects"
+            >Read My Work</a
+          >
+          <a href="../POETRY/poetry.html" class="line-read-work"
+            >View Projects</a
+          >
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="image-container">
+          <img
+            src="HOME/cofee.png"
+            alt="Featured showcase artwork"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- UPDATE FEATURED WORKS LAYOUT -->
+    <div class="page">
+      <section class="featured">
+      <div class="section-title">
+      <span class="ornament left"></span>
+      <h2>Featured Works</h2>
+      <span class="ornament right"></span>
+      </div>
+      <div class="cards">
+      <article class="card" data-work="qadr">
+      <div class="card-body" >
+      <div class="label">Poem</div>
+      <h3 >On Qadr</h3>
+      <p>if the world was mine</p>
+      <button class="read-more">Read More <span class="arrow">→</span></button>
+      </div>
+      <div class="card-image">
+      <img src="../POETRY/Qadr.jpg" alt="Dried flowers" />
+      </div>
+      </article>
+      <article class="card" data-work="code" >
+      <div class="card-body">
+      <div class="label">Article</div>
+      <h3>The Importance of Writing Comments in codes</h3>
+      <p>Lessons I learned while struggling (and why it was worth it).</p>
+      <button class="read-more">Read More <span class="arrow">→</span></button>
+      </div>
+      <div class="card-image">
+      <img src="computer.png" alt="Laptop and coffee" />
+      </div>
+      </article>
+    
+      </div>
+      </section>
+      <footer class="quote-bar">
+      <div class="quote">
+      <span class="quote-mark">“</span>
+      <p>I write.I build.I create.</p>
+      </div>
+      <div class="motto">
+      <svg class="quill" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <path d="M44 8c-8 6-16 20-18 34-1 8 2 14 8 16 2-10 8-22 18-32-4-6-8-12-8-18z" stroke="#d7cfc0"
+      stroke-width="2"/>
+      <path d="M26 42c-8 6-16 12-18 16" stroke="#d7cfc0" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span> Read. Write. Build. Repeat.</span>
+      </div>
+      </footer>
+      </div>
+      <div class="modal" id="modal">
+      <div class="modal-card">
+      <div class="label" id="modal-type"></div>
+      <h3 id="modal-title" class="modal-title"></h3>
+      <div id="modal-body" class="modal-body"></div>
+      <button class="close-btn" id="close-modal">Close</button>
+      </div>
+      </div>
+      <script src="HOME/home.js"></script>
+  </body>
+</html>
