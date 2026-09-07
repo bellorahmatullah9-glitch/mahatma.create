@@ -1,1 +1,112 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="poetry.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <a href="#home"> Mahatma Creates </a>
+      </div>
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <ul class="sidebar">
+          <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ABOUTME/about.html">About</a></li>
+          <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../POETRY/poetry.html"  class="active">Poems</a></li>
+          <li><a href="../Contact/contact.html" >Contact</a></li>
+        </ul>
+        <ul class="openbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ABOUTME/about.html" >About</a></li>
+          <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../POETRY/poetry.html" class="active">Poems</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li>
+         
+        </ul>
+      </nav>
+      <button class="connect-btn" type="button" id="connect-btn">
+        Let's Connect
+      </button>
+      <li onclick=showSidebar() class="menu-button"><a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </header>
+    <!-- Main Content -->
+<main>
+    <h1>Poetry Gallery</h1>
+    <div class="filters">
+    <button class="filter-btn active" data-filter="all">All Poems</button>
+    <button class="filter-btn" data-filter="love">Love</button>
+    <button class="filter-btn" data-filter="life">Life</button>
+    <button class="filter-btn" data-filter="faith">Faith</button>
+    <button class="filter-btn" data-filter="growth">Growth</button>
+    </div>
+    <div class="poem-grid" id="poemGrid">
+    <!-- Card 1 -->
+    <article class="poem-card" data-category="life growth" data-id="1">
+    <img src="Expectations.jpg" alt="Dried
+    flowers" class="card-image">
+    <div class="card-content">
+    <h3>Expectations</h3>
+    <p>When you say you like poetry....</p>
+    <span class="read-link">Read Poem →</span>
+    </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="poem-card" data-category="faith love" data-id="2">
+    <img src="Shadow.jpg"
+    alt="Coffee cup and book" class="card-image">
+    <div class="card-content">
+    <h3>A letter from my shadow</h3>
+    <p>I do not want to replace your light, I want to complete it.</p>
+    <span class="read-link">Read Poem →</span>
+    </div>
+    </article>
+    <!-- Card 3 -->
+    <article class="poem-card" data-category="faith growth" data-id="3">
+    <img src="Qadr.jpg" alt="Lone
+    tree at dusk" class="card-image">
+    <div class="card-content">
+    <h3> On Qadr</h3>
+    <p>If the world was mine....</p>
+    <span class="read-link">Read Poem →</span>
+    </div>
+    </article>
+    <!-- Card 4 -->
+    <article class="poem-card" data-category="life love" data-id="4">
+    <img src="hearts.jpg" alt="Night
+    sky with moon" class="card-image">
+    <div class="card-content">
+    <h3>Shallow</h3>
+    <p>What is shallow will always dry first.</p>
+    <span class="read-link">Read Poem →</span>
+    </div>
+    </article>
+    </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+    <button class="close-btn" id="closeModal">&times;</button>
+    <img src="" alt="" class="modal-image" id="modalImage">
+    <div class="modal-body">
+    <h2 id="modalTitle"></h2>
+    <span class="modal-category" id="modalCategory"></span>
+    <div class="poem-text" id="modalPoem"></div>
+    </div>
+    </div>
+    </div>
+    <script src="poetry.js"></script>
+  </body>
+</html>
