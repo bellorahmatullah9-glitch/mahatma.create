@@ -140,8 +140,10 @@ h1,h2,h3, .logo a{
   font-size: 1.05rem;
   color: #4a4a4a;
   line-height: 1.6;
-  margin-bottom: px;
-  margin-top: 0;
+  margin-bottom: 15px;
+  margin-top: 50;
+margin-right: 60px;
+width :330px;
 }
 .hero-actions {
   display: flex;
@@ -696,7 +698,7 @@ html, body {
     line-height: 1.2;
   }
   .hero-subtitle{
-    width: 350px;
+    width: 300px;
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
@@ -710,11 +712,11 @@ html, body {
     width: 300px;
   }
 .hero-subtitle{
-  width: 300px;
+  width: 100px;
 }
 .hero-actions{
   display: flex !important;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 }
