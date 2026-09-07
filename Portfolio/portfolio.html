@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mahatma Creates — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?
+family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;4
+00;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+          <a href="#home"> Mahatma Creates </a>
+        </div>
+        <nav class="nav" id="main-nav" aria-label="Primary">
+          <ul class="sidebar">
+            <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../index.html" >Home</a></li>
+          <li><a href="../ABOUTME/about.html">About</a></li>
+            <li><a href="../Portfolio/portfolio.html" class="active">Portfolio</a></li>
+           <li><a href="../POETRY/poetry.html" style="color: #20201f;">Poems</a></li>
+            <li><a href="../Contact/contact.html" style="color: #20201f;" >Contact</a></li>
+          </ul>
+          <ul class="openbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../ABOUTME/about.html">About</a></li>
+            <li><a href="../Portfolio/portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="../POETRY/poetry.html">Poems</a></li>
+            <li><a href="../Contact/contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+        <button class="connect-btn" type="button" id="connect-btn">
+          Let's Connect
+        </button>
+        <li onclick=showSidebar() class="menu-button"><a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+      </header>
+<main>
+<section class="portfolio" id="portfolio">
+<h1>My Project</h1>
 
+<div class="project-grid">
+<article class="project-card" data-category="web">
+<div class="project-thumb">
+<img src="free.jpg" alt="Freelance Dashboard preview" />
+</div>
+<h2>WorkHub</h2>
+<p>A freelance platform dashboard built with HTML &amp; CSS.</p>
+<a class="project-link" href="#https://bellorahmatullah9-glitch.github.io/Worrkhub/">View Project →</a>
+</article>
+</div>
+</section>
+</main>
+<script src="portfolio.js"></script>
+</body>
+</html>
